@@ -1,4 +1,4 @@
-import "./loadEnvirontment.ts";
+import "./loadEnvirontment.js";
 import express from "express";
 
 const app = express();
