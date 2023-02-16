@@ -1,4 +1,4 @@
-const things = {
+export const things = {
   things: [
     {
       id: 1,
