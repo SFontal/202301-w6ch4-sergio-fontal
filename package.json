@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "start": "node dist",
-    "star:dev": "node --watch dist",
+    "start:dev": "node --watch dist",
     "build": "tsc",
     "build:dev": "tsc --watch",
     "prepare": "husky install"
