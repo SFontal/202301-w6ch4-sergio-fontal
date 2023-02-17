@@ -15,12 +15,6 @@ app.use(morgan("dev"));
 
 app.use("/things", thingsRouter);
 
-app.get("/", getThings);
-
-app.get("/:id", getThing);
-
-app.delete("/:id", deleteThing);
-
 app.listen(port, () => {
   console.log(`Server is listening requests from ${port} port.`);
 });

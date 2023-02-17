@@ -1,5 +1,6 @@
 import { Router } from "express";
 import {
+  createThing,
   deleteThing,
   getThing,
   getThings,
@@ -11,5 +12,6 @@ const thingsRouter = Router();
 thingsRouter.get("/", getThings);
 thingsRouter.get("/:id", getThing);
 thingsRouter.delete("/:id", deleteThing);
+thingsRouter.post("/", createThing);
 
 export default thingsRouter;
