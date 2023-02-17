@@ -1,6 +1,10 @@
 import "./loadEnvirontment.js";
 import express from "express";
-import { getThing, getThings } from "./controllers/thingsControllers.js";
+import {
+  deleteThing,
+  getThing,
+  getThings,
+} from "./controllers/thingsControllers.js";
 import morgan from "morgan";
 import thingsRouter from "./routers/thingsRouters.js";
 
@@ -14,6 +18,8 @@ app.use("/things", thingsRouter);
 app.get("/", getThings);
 
 app.get("/:id", getThing);
+
+app.delete("/:id", deleteThing);
 
 app.listen(port, () => {
   console.log(`Server is listening requests from ${port} port.`);
